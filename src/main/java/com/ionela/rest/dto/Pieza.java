@@ -23,7 +23,7 @@ public class Pieza {
 	private String nombre;
 
 	@JsonIgnore
-	@OneToMany(fetch = FetchType.LAZY, mappedBy = "codigo_piezapieza")
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "pieza")
 	private List<Suministra> suministros;
 
 	public Pieza(Long id, String nombre, List<Suministra> suministros) {

@@ -22,7 +22,7 @@ public class Proveedor {
 	private String nombre;
 
 	@JsonIgnore
-	@OneToMany(fetch = FetchType.LAZY, mappedBy = "id_proveedor")
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "proveedor")
 	private List<Suministra> suministros;
 
 	public Proveedor(String id, String nombre, List<Suministra> suministros) {
