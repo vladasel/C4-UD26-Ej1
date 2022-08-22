@@ -1,5 +1,9 @@
 package com.ionela.rest.dao;
 
-public interface IPiezaDAO {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.ionela.rest.dto.Pieza;
+
+public interface IPiezaDAO extends JpaRepository<Pieza,Long>{
 
 }
